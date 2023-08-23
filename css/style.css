@@ -1,0 +1,615 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    transition: .4s;
+    
+}
+body::-webkit-scrollbar{
+    width: 20px;
+}
+body::-webkit-scrollbar-track{
+    background: #3873ae;
+}
+body::-webkit-scrollbar-thumb{
+    background-color: #fff;
+    border-radius: 50px;
+}
+*::selection{
+    background-color: #3873ae;
+}
+html{
+    font-size: 16px;
+}
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* Home section start */
+.home{
+    width: 100%;
+    padding-bottom: 60px;
+    background-image: url("../img/bg1.jpg");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.home .home-center{
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* Tongale navicon */
+.home .home-center .navigation .fa-navicon{
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    font-size: 1.8rem;
+    color: #fff;
+    display: none;
+}
+/* Navigation section area */
+.home-center .navigation-area{
+    width: 100%;
+}
+.home-center .navigation-area .brand{
+    float: left;
+    margin-top: 20px;
+}
+.home-center .navigation-area .brand a{
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+/* Navigation section start */
+.home-center .navigation-area .navigation{
+    float: right;
+}
+.home-center .navigation-area .navigation .menu{
+    width: 100%;
+    list-style: none;
+    margin-top: 20px;
+    background-color: #fff;
+}
+.home-center .navigation-area .navigation .menu li{
+    float: left;
+    padding: 15px 0;
+}
+.home-center .navigation-area .navigation .menu li a{
+    color: gray;
+    letter-spacing: 1px;
+    margin: 0 20px 0 20px;
+}
+.home-center .navigation-area .navigation .menu .home-menu{
+    background-color: #2b2b2b;
+    cursor: pointer;
+}   
+.home-center .navigation-area .navigation .menu .home-menu a{
+    color: #fff;
+}
+
+.home-center .navigation-area .navigation .menu .about:hover,
+.home-center .navigation-area .navigation .menu .service:hover,
+.home-center .navigation-area .navigation .menu .contact:hover,
+.home-center .navigation-area .navigation .menu .dropdown:hover{
+    background-color: #2b2b2b;
+    transition: all 0.8s;
+    cursor: pointer;
+}
+.home-center .navigation-area .navigation .menu .about:hover a,
+.home-center .navigation-area .navigation .menu .service:hover a,
+.home-center .navigation-area .navigation .menu .contact:hover a,
+.home-center .navigation-area .navigation .menu .dropdown:hover a{
+    color: #fff;
+    transition: all 0.8s;
+}
+.home-center .navigation-area .navigation .menu .dropdown span{
+    position: relative;
+    top: -2px;
+}
+/* Sub-menu section start */
+
+.home-center .navigation-area .navigation .sub-menu{
+    list-style: none;
+    position: absolute;
+    top: 68px;
+    right: 68px;
+    display: none;
+    transition: all 0.8s;
+    border: 1px solid #2b2b2b;
+}
+.home-center .navigation-area .navigation .sub-menu li{
+    clear: both;
+}
+.home-center .navigation-area .navigation .sub-menu hr{
+    width: 90%;
+    height: 1px;
+    background-color: #2b2b2b;
+    margin: 0 auto;
+}
+.home-center .navigation-area .navigation .dropdown:hover .sub-menu{
+    display: block;
+    background-color: #fff;
+    cursor: pointer;
+}
+.home-center .navigation-area .navigation .dropdown:hover .sub-menu a{
+    color: #2b2b2b;
+}
+.home-center .navigation-area .navigation .sub-menu a:hover{
+    color: cornflowerblue !important;
+    transition: all 0.3s !important;
+}
+/* Sub-menu section end */
+/* Navigation section end */
+
+/* Text area section start */
+.home-center .text-area{
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    color: #fff;
+}
+.home-center .text-area h1{
+    font-size: 3rem;
+    margin-top: 160px;
+}
+.home-center .text-area p{
+    margin-top: 10px;
+    font-weight: 700;
+}
+.home-center .text-area a{
+    border: 2px solid #fff;
+    border-radius: 100%;
+    font-size: 3rem;
+    padding: 8px 25px;
+}
+.home-center .text-area .fa-angle-double-down{
+    font-size: 2rem;
+    color: #fff;
+    margin-top: 70px;
+}
+/* Text area section end */
+/* Home section end */
+
+/* About section start */
+.about-section{
+    width: 100%;
+}
+.about-section .about-center{
+    width: 90%;
+    margin: 0 auto;
+}
+.about-section .about-center .text-area,
+.services-section .services-center .text-area,
+.contact-section .contact-center .text-area{
+    width: 30%;
+    margin: 0 auto;
+    text-align: center;
+}
+.about-section .about-center .text-area h1,
+.services-section .services-center .text-area h1,
+.contact-section .contact-center .text-area h1{
+    margin-top: 80px;
+    font-size: 2.5rem;
+    color: #2b2b2b;
+}
+.about-section .about-center .text-area span,
+.services-section .services-center .text-area span,
+.contact-section .contact-center .text-area span{
+    color: #2b2b2b;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+.about-section .about-center .text-area hr,
+.services-section .services-center .text-area hr,
+.contact-section .contact-center .text-area hr{
+    width: 40%;
+    height: 1px;
+    background-color: gray;
+    border: 0;
+    margin: 0 auto;
+
+}
+
+/* Team member section */
+.about-center .four-team{
+    width: 100%;
+    margin-bottom: 100px;
+}
+.about-center .four-team .team-1{
+    width: 22%;
+    float: left;
+    background-color: rgba(236, 234, 234, 0.87);
+    text-align: center;
+    margin-top: 70px !important;
+    padding-bottom: 25px;
+}
+.about-center .four-team .team-2,
+.services-center .services-area .services-2{
+    margin: 0 48px 0 48px;
+}
+.about-center .four-team .team-3,
+.services-center .services-area .services-3{
+    margin: 0 48px 0 0px;
+}
+.about-center .four-team .team-1 h2{
+    font-size: 1.2rem;
+    color: #2b2b2b;
+    margin-top: 15px;
+}
+.about-center .four-team .team-1 h3{
+    font-size: 1rem;
+    margin: 10px 0 20px 0;
+    color: gray;
+}
+.about-center .four-team .team-1 img{
+    width: 80%;
+    border-radius: 100%;
+}
+/* About section end */
+
+/* Services section start */
+.services-section{
+    width: 100%;
+    background-color: #f5f0f0;
+    padding-bottom: 90px;
+}
+.services-section .services-center{
+    width: 90%;
+    margin: 0 auto;
+}
+.services-section .services-center .text-area{
+    padding-top: 1px;
+}
+
+/* Services area section */
+.services-center .services-area{
+    width: 100%;
+}
+.services-center .services-area .services-1{
+    width: 22%;
+    float: left;
+    text-align: center;
+    margin-top: 70px;
+}
+.services-center .services-area .services-1 h2{
+    font-size: 1rem;
+    color: #2b2b2b;
+    margin-top: 10px;
+}
+.services-center .services-area .services-1 p{
+    letter-spacing: 1px;
+    margin-top: 20px;
+    line-height: 25px;
+}
+/* Services section end */
+
+/* Contact section start */
+.contact-section{
+    width: 100%;
+    padding-bottom: 70px;
+}
+.contact-section .contact-center{
+    width: 90%;
+    margin: 0 auto;
+}
+.contact-section .contact-center .text-area{
+    margin-bottom: 50px;
+}
+.contact-center .two-section{
+    width: 100%;
+}
+
+.contact-center .two-section .one{
+    width: 60%;
+    float: left;
+    background-color: #f5f0f0;
+}
+/* Two section part one */
+.contact-center .two-section .one form{
+    width: 90%;
+    margin: 0 auto;
+    padding: 30px 0 380px 0;
+}
+.contact-center .two-section .one form .left{
+    width: 55%;
+    float: left;
+}
+/* Two section form left */
+.two-section .one form .left label,
+.two-section .one form .right label{
+    display: block;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #4b4a4a;
+    margin-bottom: 10px;
+}
+.two-section .one form .left .email{
+    width: 100%;
+    border: 1px solid #4b4a4a;
+    margin-bottom: 15px;
+    background-color: #fff;
+}
+.two-section .one form .left .email span{
+    width: 15%;
+    padding: 8px 0 0 15px;
+    font-size: 1.2rem;
+}
+.two-section .one form .left .email input{
+    width: 85%;
+    float: right;
+    padding: 10px;
+    margin-bottom: 0;
+    border: none;
+    border-left: 1px solid #4b4a4a;
+}
+.two-section .one form .left input{
+    width: 100%;
+    outline-color: skyblue;
+    border: 1px solid #2b2b2ba2;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+.two-section .one form .left select{
+    width: 100%;
+    padding: 10px;
+    outline-color: skyblue;
+    border: 1px solid #2b2b2ba2;
+}
+.contact-center .two-section .one form .right{
+    width: 40%;
+    float: right;
+}
+.two-section .one form .right textarea::placeholder{
+    font-weight: 700;
+    font-size: 0.9rem;
+}
+.two-section .one form .right textarea{
+    width: 100%;
+    resize: none;
+    margin-bottom: 10px;
+    outline-color: skyblue;
+    border: 1px solid #2b2b2ba2;
+    padding: 10px;
+}
+.two-section .one form .right button{
+    width: 50%;
+    background-color: rgb(95, 176, 243);
+    border: none;
+    padding: 10px;
+    color: #fff;
+    font-weight: 700;
+    margin-left: 131px;
+    cursor: pointer;
+}
+/* Contact section two-section second part */
+.contact-center .two-section .two{
+    width: 35%;
+    float: right;
+}
+.contact-center .two-section .two h2{
+    color: #2b2b2b;
+    font-size: 1.2rem;
+}
+.contact-center .two-section .two p{
+    color: #4b4a4a;
+    margin-top: 5px;
+    line-height: 25px;
+    letter-spacing: 1px;
+}
+.contact-center .two-section .two a{
+    color: rgb(95, 176, 243);
+    margin-top: 10px;
+}
+.contact-center .two-section .two .icon{
+    width: 100%;
+}
+.contact-center .two-section .two .icon span{
+    padding: 15px;
+    color: #fff;
+}
+.contact-center .two-section .two .icon .fa-facebook{
+    background-color: #3873ae;
+}
+.contact-center .two-section .two .icon .fa-twitter{
+    background-color: #62c6f8;
+}
+.contact-center .two-section .two .icon .fa-dribbble{
+    background-color: #d74980;
+}
+.contact-center .two-section .two .icon .fa-google-plus{
+    background-color: #000;
+}
+/* Contact section end */
+
+/* footer section start */
+footer{
+    width: 100%;
+    padding: 60px 0;
+    background-color: #62c6f8;
+    text-align: center;
+    color: #fff;
+}
+footer a{
+    border: 2px solid #fff;
+    border-radius: 100%;
+    font-size: 3rem;
+    padding: 10px 20px;
+    color: #fff;
+}
+footer p{
+    margin-top: 20px;
+    font-size: 1.2rem;
+}
+/* footer section end */
+
+/* Media query start */
+/* for laptop 1024px display */
+@media only screen and (max-width:1025px){
+    /* Home section */
+    .home-center .navigation-area .navigation .sub-menu{
+        right: 50px;
+    }
+    .home-center .text-area{
+        width: 60%;
+    }
+
+    /* About section */
+    .about-center .four-team .team-1{
+        width: 40%;
+    }
+    .about-center .four-team .team-2{
+        margin: 0 0px 0 180px;
+    }
+    .about-center .four-team .team-4{
+        margin: 0 0 0 132px;
+    }
+    
+    /* Services section */
+    .services-section .services-center .text-area,
+    .contact-section .contact-center .text-area{
+        width: 60%;
+    }
+    .services-center .services-area .services-1{
+        width: 40%;
+    }
+    .services-center .services-area .services-2{
+        margin:  70px 0 0 180px;
+    }
+    .services-center .services-area .services-4{
+        margin:  70px 0 0 132px;
+    }
+    
+    /* Contact section */
+    .two-section .one form .left .email span{
+        padding: 8px 0 0 10px;
+    }
+    .two-section .one form .right button{
+        margin-left: 35px;
+        width: 60%;
+        font-size: 0.7rem;
+    }
+}
+/* for laptop 1024px display */
+
+/* for Tab 769px display */
+@media only screen and (max-width:769px){
+    /* Tongale navicon */
+    .home .home-center .navigation .fa-navicon{
+        display: block;
+        cursor: pointer;
+    }
+
+    .home .home-center .navigation .menu{
+        display: none;
+    }
+    .home-center .text-area{
+        width: 70%;
+    }
+    .home-center .text-area h1{
+        font-size: 2.5rem;
+    }
+    .home-center .text-area p{
+        line-height: 30px;
+    }
+    
+    /* About section */
+    .about-section .about-center{
+        width: 70%;
+    }
+    .about-section .about-center .text-area{
+        width: 50%;
+    }
+    .about-center .four-team .team-1{
+        width: 100%;
+        margin: 0;
+    }
+    .about-center .four-team .team-1 h2{
+        font-size: 2.5rem;
+        margin-top: 50px;
+    }
+    .about-center .four-team .team-1 h3{
+        font-size: 1.8rem;
+    }
+    .about-center .four-team .team-1 img{
+        width: 60%;
+    }
+
+    /* Services section */
+    .services-section .services-center{
+        width: 70%;
+    }
+    .services-center .services-area .services-1{
+        width: 100%;
+        margin: 40px 0 30px 0;
+    }
+
+    /* Contact section */
+    .contact-section .contact-center{
+        width: 70%;
+    }
+    .contact-center .two-section .one{
+        width: 100%;
+    }
+    .contact-center .two-section .two{
+        width: 100%;
+        text-align: center;
+        margin: 30px 0;
+    }
+    .two-section .one form .right textarea{
+        height:51vh;
+    }
+    .contact-center .two-section .one form{
+        padding: 30px 0 300px 0;
+    }
+}
+/* for laptop 769px display */
+
+/* for laptop 426px display */
+@media only screen and (max-width:426px){
+    /* Home section */
+    .home-center .text-area{
+        width: 100%;
+    }
+
+    /* About section */
+    .about-section .about-center {
+        width: 90%;
+    }
+    .about-section .about-center .text-area{
+        width: 100%;
+    }
+    .about-center .four-team .team-1 h2{
+        font-size: 2.2rem;
+    }
+
+    /* Services section */
+    .services-section .services-center{
+        width: 90%;
+    }
+    .services-section .services-center .text-area{
+        width: 100%;
+    }
+
+    /* Contact section */
+    .contact-section .contact-center{
+        width: 90%;
+    }
+    .contact-section .contact-center .text-area{
+        width: 100%;
+    }
+    .contact-center .two-section .one form .left,
+    .contact-center .two-section .one form .right{
+        width: 100%;
+    }
+    .two-section .one form .right button{
+        margin-left: 65px;
+    }
+}
+/* for laptop 426px display */
+/* Media query end */
